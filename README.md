@@ -11,7 +11,7 @@
    MessagingProps in taco-property, beans in taco-model, beans in taco-data.
    
  ALL configurations:
- dev,prod,property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security
+ dev,prod,property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix
 
  dev:
    config: log level
@@ -39,6 +39,8 @@
    config: kafka config
  kafka-sender, kafka-listener
  mpa:
-    beans: IngredientByIdConverter in taco-data,
+   beans: IngredientByIdConverter in taco-data
  security:
-    beans: UserRepository in taco-data.
+   beans: UserRepository in taco-data
+ feign-hystrix:
+   config: feign-hystrix config
