@@ -6,14 +6,11 @@ feign:
       default:
         connectTimeout: 5000
         readTimeout: 5000
-    # 说明：请务必注意，从Spring Cloud Dalston开始，Feign默认是不开启Hystrix的。
-    # 因此，如使用Dalston请务必额外设置属性：feign.hystrix.enabled=true，否则
-    # 断路器不会生效。
 
 hystrix:
   threadpool:
     default:
-      coreSize: 10  # 全局配置
+      coreSize: 10  # global configuration
   command:
     default:
       execution.isolation.thread.timeoutInMilliseconds: 60000 # closed -> open
