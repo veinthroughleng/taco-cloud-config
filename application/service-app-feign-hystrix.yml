@@ -1,27 +1,27 @@
 feign:
   hystrix:
     enable: true
-  client:
-    config:
-      default:
-        connectTimeout: 5000
-        readTimeout: 5000
-
-hystrix:
-  threadpool:
-    default:
-      coreSize: 10  # global configuration
-  command:
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 60000 # closed -> open
-      circuitBreaker:
-        enabled: true
-        requestVolumeThreshold: 5 # closed -> open
-        errorThresholdPercentage: 25 # closed -> open
-        sleepWindowInMilliseconds: 300000 # open -> half-open
-      fallback.enabled: false
-    # My client
-    RestClient#getIngredient():
-      execution.isolation.thread.timeoutInMilliseconds: 100
-    RestClient#getAllIngredients():
-      execution.isolation.thread.timeoutInMilliseconds: 100
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#
+#hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 10  # global configuration
+#  command:
+#    default:
+#      execution.isolation.thread.timeoutInMilliseconds: 60000 # closed -> open
+#      circuitBreaker:
+#        enabled: true
+#        requestVolumeThreshold: 5 # closed -> open
+#        errorThresholdPercentage: 25 # closed -> open
+#        sleepWindowInMilliseconds: 300000 # open -> half-open
+#      fallback.enabled: false
+#    # My client
+#    RestClient#getIngredient():
+#      execution.isolation.thread.timeoutInMilliseconds: 100
+#    RestClient#getAllIngredients():
+#      execution.isolation.thread.timeoutInMilliseconds: 100
