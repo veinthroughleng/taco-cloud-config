@@ -2,5 +2,6 @@ server:
   port: 8084
 
 turbine:
-  app-config: service-rest, service-app
+  app-config: service-app
+#  app-config: service-rest, service-app
   cluster-name-expression: "'default'"
