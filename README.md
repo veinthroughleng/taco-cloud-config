@@ -11,7 +11,7 @@
    MessagingProps in taco-property, beans in taco-model, beans in taco-data.
    
  ALL configurations:
- dev,prod,property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix
+ dev,prod,eureka,admin-eureka, property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix
 
  dev:
    config: log level
@@ -44,3 +44,7 @@
    beans: UserRepository in taco-data
  feign-hystrix:
    config: feign-hystrix config
+ eureka:
+   config: config for eureka client
+ admin-eureka:
+   config: config for eureka clients to serve their username/password to admin server, who consumes their actuator endpoint
