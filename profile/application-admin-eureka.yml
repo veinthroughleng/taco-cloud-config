@@ -1,6 +1,6 @@
 # configuration fo a secured admin client
-#eureka:
-#  instance:
-#  metadata-map:
-#  user.name: admin
-#  user.password: password
+eureka:
+  instance:
+  metadata-map:
+  user.name: admin
+  user.password: password
