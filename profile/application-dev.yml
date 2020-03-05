@@ -1,3 +1,8 @@
+#logging:
+#  level:
+#    veinthrough.tacocloud.service: INFO
+
 logging:
   level:
-    veinthrough.tacocloud.service: INFO
+    veinthrough.taco.service.rest.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
