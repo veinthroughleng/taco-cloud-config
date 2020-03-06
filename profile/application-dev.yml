@@ -4,5 +4,6 @@
 
 logging:
   level:
-    veinthrough.taco.service.rest.security: DEBUG
     org.springframework.security.oauth2: DEBUG
+    org.springframework.cloud.security.oauth2: DEBUG
+    org.springframework.cloud.openfeign: DEBUG
