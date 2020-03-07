@@ -32,6 +32,7 @@
            
  rest:
    config: rest url,
+   beans: IngredientAssembler, TacoAssembler, UserAssembler, OrderAssembler
    
  message:
    config: message config like sources/queues/routing-keys/topics for jms/rabbit/kafka
