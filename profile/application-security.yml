@@ -10,7 +10,7 @@ security:
       authorities: ROLE_USER, ROLE_ADMIN
       scopes: read, write
       accessTokenValiditySeconds: 3600
-    #      clientAuthenticationScheme:
+#      clientAuthenticationScheme:
     resource:
       resourceId: taco-rest
 #      userInfoUri: ${USER_INFO_URI:http://localhost:9200/uaa/user/info}
