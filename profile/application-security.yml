@@ -1,0 +1,16 @@
+security:
+  h2-console-secured: false
+  actuator-secured: false
+  oauth2:
+    client:
+      clientId: web-spa
+      clientSecret: 123456
+      accessTokenUri: http://localhost:8081/oauth/token
+      grantTypes: client_credentials, password, refresh_token
+      authorities: ROLE_USER, ROLE_ADMIN
+      scopes: read, write
+      accessTokenValiditySeconds: 3600
+    #      clientAuthenticationScheme:
+    resource:
+      resourceId: taco-rest
+#      userInfoUri: ${USER_INFO_URI:http://localhost:9200/uaa/user/info}

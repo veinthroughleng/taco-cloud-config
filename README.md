@@ -11,7 +11,7 @@
    MessagingProps in taco-property, beans in taco-model, beans in taco-data.
    
  ALL configurations:
- dev,prod,eureka,admin-eureka, property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix
+ dev,prod,eureka,admin-eureka, property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix,jwt
 
  dev:
    config: log level
@@ -34,6 +34,7 @@
    config: rest url,
    
  message:
+   config: message config like sources/queues/routing-keys/topics for jms/rabbit/kafka
    beans: MessagingProps in taco-property.
    
  jms:
@@ -56,6 +57,7 @@
    
  security:
    beans: UserRepository in taco-data
+   config: security config like oAuth2
    
  feign-hystrix:
    config: feign-hystrix config
@@ -65,3 +67,5 @@
    
  admin-eureka:
    config: config for eureka clients to serve their username/password to admin server, who consumes their actuator endpoint
+ jwt:
+   config: config for jwt(git branch cloud-self-jwt, git tag SECURED_REST_self_jwt)

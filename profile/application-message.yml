@@ -1,0 +1,9 @@
+message:
+  sources:
+    order: WEB
+  queues:
+    order: taco.queue.order
+  routing-keys:
+    order: taco.routingKey.order
+  topics:
+    order: taco.topic.order
