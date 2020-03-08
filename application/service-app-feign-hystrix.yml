@@ -17,8 +17,5 @@ hystrix:
         requestVolumeThreshold: 5 # closed -> open
         errorThresholdPercentage: 25 # closed -> open
         sleepWindowInMilliseconds: 300000 # open -> half-open
-    # My client
-    RestClient#getIngredient():
-      execution.isolation.thread.timeoutInMilliseconds: 100
-    RestClient#getAllIngredients():
-      execution.isolation.thread.timeoutInMilliseconds: 100
+    RestClient#userByName():
+      execution.isolation.thread.timeoutInMilliseconds: 10000
