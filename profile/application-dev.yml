@@ -1,9 +1,5 @@
 logging:
   level:
     veinthrough.taco: DEBUG
-    org.springframework.hateoas: DEBUG
-    org.springframework.http: DEBUG
-    org.springframework.http.converter: DEBUG
     org.springframework.security: DEBUG
     org.springframework.cloud.security: DEBUG
-    org.springframework.cloud.openfeign: DEBUG

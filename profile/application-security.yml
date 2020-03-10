@@ -6,7 +6,7 @@ security:
       clientId: web-spa
       clientSecret: 123456
       accessTokenUri: http://localhost:8081/oauth/token
-      grantTypes: client_credentials, password, refresh_token
+      grantTypes: client_credentials, implicit, password, refresh_token
       authorities: ROLE_USER, ROLE_ADMIN
       scopes: read, write
       accessTokenValiditySeconds: 3600

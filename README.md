@@ -26,7 +26,8 @@
    config: properties
    
  jpa-rest:
-   beans: jpa repositories in taco-data,
+   beans:  jpa entities in taco-model,
+           jpa repositories in taco-data,
            IngredientByNameAndTypeConverter in taco-data,
            IngredientAssembler, TacoAssembler in taco-model.
            
@@ -57,7 +58,6 @@
    beans: IngredientByIdConverter in taco-data
    
  security:
-   beans: UserRepository in taco-data
    config: security config like oAuth2
    
  feign-hystrix:
