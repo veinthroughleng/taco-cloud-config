@@ -4,6 +4,6 @@ message:
   queues:
     order: taco.queue.order
   routing-keys:
-    order: taco.routingKey.order
+    order: taco.order
   topics:
     order: taco.topic.order
