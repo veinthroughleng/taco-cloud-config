@@ -1,0 +1,7 @@
+# configuration of which endpoints from actuator/* are exposed for Admin client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#        exclude: threaddump,heapdump

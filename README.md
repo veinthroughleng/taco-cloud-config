@@ -11,7 +11,7 @@
    MessagingProps in taco-property, beans in taco-model, beans in taco-data.
    
  ALL configurations:
- dev,prod,eureka,admin-eureka, property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix,jwt
+ dev,prod,eureka,admin,admin-eureka,property,jpa-rest,rest,message,rabbit,rabbit-sender,rabbit-receiver,rabbit-listener,mpa,security,feign-hystrix,jwt
 
  dev:
    config: log level
@@ -65,7 +65,10 @@
    
  eureka:
    config: config for eureka client
-   
+ 
+ admin:
+   config: config of which endpoints from actuator/* are exposed for Admin client
+ 
  admin-eureka:
    config: config for eureka clients to serve their username/password to admin server, who consumes their actuator endpoint
  jwt:

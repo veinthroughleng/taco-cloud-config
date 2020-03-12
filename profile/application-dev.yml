@@ -1,5 +1,5 @@
 logging:
   level:
     veinthrough.taco: DEBUG
-    org.springframework.security: DEBUG
-    org.springframework.cloud.security: DEBUG
+#    org.springframework.security: DEBUG
+#    org.springframework.cloud.security: DEBUG
