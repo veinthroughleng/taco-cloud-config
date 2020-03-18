@@ -11,5 +11,5 @@ eureka:
     register-with-eureka: false
     service-url:
 #      defaultZone: https://veinthrough-service-registry.cfapps.io/eureka
-      defaultZone: http://localhost:${server.port}/eureka
+      defaultZone: http://127.0.0.1:${server.port}/eureka
 #      defaultZone: http://${other.eureka.host}:${other.eureka.port}/eureka
