@@ -1,15 +1,15 @@
 server:
-  port: 8761
+  port: 8080
 
 eureka:
-#  instance:
-#    hostname: eureka
+  instance:
+    hostname: eureka
   server:
     enable-self-preservation: false
   client:
     fetch-registry: false
     register-with-eureka: false
-#    service-url:
+    service-url:
 #      defaultZone: https://veinthrough-service-registry.cfapps.io/eureka
-#      defaultZone: http://127.0.0.1:${server.port}/eureka
+      defaultZone: http://127.0.0.1:${server.port}/eureka
 #      defaultZone: http://${other.eureka.host}:${other.eureka.port}/eureka
