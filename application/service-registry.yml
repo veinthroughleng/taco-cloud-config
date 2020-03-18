@@ -1,9 +1,9 @@
 server:
-  port: 8762
+  port: 8761
 
 eureka:
-  instance:
-    hostname: eureka
+#  instance:
+#    hostname: eureka
   server:
     enable-self-preservation: false
   client:
