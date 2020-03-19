@@ -5,5 +5,5 @@ eureka:
 #    secure-port: 443
   client:
     service-url:
-      defaultZone: ${vcap.services.veinthrough-eureka.url}
+      defaultZone: ${vcap.services.veinthrough-eureka.credentials.url}
 #      defaultZone: http://localhost:8761/eureka
