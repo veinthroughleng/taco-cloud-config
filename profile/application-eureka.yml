@@ -1,8 +1,8 @@
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
-#    non-secure-port: 80
-    secure-port: 443
+    non-secure-port: 80
+#    secure-port: 443
   client:
     service-url:
       defaultZone: ${vcap.services.veinthrough-eureka.credentials.url}
