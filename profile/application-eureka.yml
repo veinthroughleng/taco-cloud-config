@@ -5,6 +5,9 @@ eureka:
 #    nonSecurePortEnabled: true
     securePortEnabled: true
     secure-port: 443
+    homePageUrl: https://${eureka.instance.hostname}
+#    statusPageUrl: https://${eureka.instance.hostname}/actuator/info
+#    healthCheckUrl: https://${eureka.instance.hostname}/actuator/health
   client:
     service-url:
       defaultZone: ${vcap.services.veinthrough-eureka.credentials.url}
