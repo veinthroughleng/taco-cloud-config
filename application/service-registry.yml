@@ -3,13 +3,13 @@ server:
 
 eureka:
   instance:
-    hostname: eureka
+    hostname: ${vcap.application.uris[0]}
   server:
     enable-self-preservation: false
   client:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: https://${vcap.application.uris[0]}/eureka
+      defaultZone: https://${eureka.instance.hostname}/eureka
 #      defaultZone: http://127.0.0.1:${server.port}/eureka
 #      defaultZone: http://${other.eureka.host}:${other.eureka.port}/eureka
